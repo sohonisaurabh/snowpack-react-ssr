@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <h1>This was bootstraped using snowpack!</h1>
     <BrowserRouter>
