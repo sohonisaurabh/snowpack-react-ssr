@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx}\"",
+    "build-src": "babel --config-file ./babel.config.server-build.json --out-dir build/ssr ./src",
+    "build-server": "babel --config-file ./babel.config.server-build.json --out-dir build server.js",
+    "build-ssr": "npm run build-server-app && npm run build-server",
+    "start-server": "cd build && node server.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.4",
+    "express": "^4.17.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@snowpack/app-scripts-react": "^1.4.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "jest": "^25.4.0",
+    "prettier": "^2.0.5",
+    "snowpack": "^2.6.4"
+  }
+}
