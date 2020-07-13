@@ -10,9 +10,9 @@ There are 2 versions of app:
 SSR works as below:
 
 1. App bootstraps with CommonJS version of server and content is rendered using CommonJS versions
- of App source files
-2. On reaching the client, the app makes request to ESM version of App
-3. After first hydrate, the app loads different pages by fetching required ESM modules on the fly 
+ of app source files
+2. On reaching the client, the browser makes request to ESM version of the app
+3. After first hydrate, the app loads different pages by fetching required ESM modules on the fly
 
 This project was bootstrapped using Snowpack's @snowpack/app-template-react template.
 
